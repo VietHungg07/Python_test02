@@ -51,8 +51,9 @@ while True:
         if not found:
                 print(f"Không tìm thấy nhân viên có ID {search_id}!")  
 
-    elif choice == 5:
+    elif choice == "5":
         print("Đã thoát chương trình !")
+        break
 
     
 
