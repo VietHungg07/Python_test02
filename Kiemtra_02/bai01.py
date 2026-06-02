@@ -39,6 +39,23 @@ while True:
             for employee in employees:
                 print(f"{employee['id']} | {employee['name']} | {employee['salary']}")
 
+    elif choice == "3":
+        search_id = int(input("Nhập ID nhân viên cần tìm: "))
+        found = False
+        for employee in employees:
+            if employee["id"] == search_id:
+                print("Thông tin nhân viên:")
+                print(employee)
+                found = True
+                break
+        if not found:
+                print(f"Không tìm thấy nhân viên có ID {search_id}!")  
+
+    elif choice == 5:
+        print("Đã thoát chương trình !")
+
+    
+
 
                             
 
